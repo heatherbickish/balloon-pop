@@ -2,7 +2,7 @@
 
 // DATA
 let clickCount = 0
-let height = 120
+let height = 140
 let width = 100
 let inflationRate = 20
 let maxsize = 300
@@ -54,14 +54,15 @@ function checkBalloonPop(){
         balloonElement.classList.remove(currentColor)
         getRandomColor()
         balloonElement.classList.add(currentColor)
+
         document.getElementById('pop-sound').play()
 
         currentPopCount++
-        height = 0
+        height = 40
         width = 0
     }
 }
- 
+
 function getRandomColor(){
     let i = Math.floor(Math.random() * possibleColors.length)
     currentColor= possibleColors[i]
@@ -79,7 +80,8 @@ function draw(){
     
     clickCountElem.innerText = clickCount.toString() 
     popCountElem.innerText = currentPopCount.toString()
-    highPopCountElem.innerText = currentPlayer.topScore.toString() 
+    highPopCountElem.innerText = currentPlayer.topScore.toString()
+
     playerNameElem.innerText = currentPlayer.name   
 }
 
@@ -87,8 +89,8 @@ function stopGame(){
     console.log('the game is over')
 
     document.getElementById('main-controls').classList.remove('hidden')
-     document.getElementById('game-controls').classList.add('hidden')
-     document.getElementById('scoreboard').classList.remove('hidden')
+    document.getElementById('game-controls').classList.add('hidden')
+    document.getElementById('scoreboard').classList.remove('hidden')
 
            clickCount = 0
            height = 120

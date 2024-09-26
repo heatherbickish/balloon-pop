@@ -113,7 +113,7 @@ button:hover{
 }
 
 .balloon{
-    height: 120px;
+    height: 140px;
     width: 100px;
     background-color: blue;
     border-radius: 50%;
@@ -142,7 +142,8 @@ button:hover{
 }
 
 @keyframes balloon-float{
-    0%,100% {transform: translateY(-25px) rotate(5deg);
+    0%,100% {
+        transform: translateY(-25px) rotate(5deg);
 }
 50%{
     transform: translateY(0px) rotate(-5deg);
