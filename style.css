@@ -15,8 +15,8 @@ body{
     background-color: var(--bg);
     font-family: "Permanent Marker", cursive;
     font-size: 16pt;
-    font-weight: 400;
-    font-style: normal; 
+    /* font-weight: 400; */
+    /* font-style: normal;  */
     color: var(--text-color);
 }
 
@@ -89,7 +89,7 @@ button:hover{
     display: block;
 }
 
-.pump:active.handle{
+.pump:active .handle{
     top: -20px;
 }
 
@@ -109,7 +109,7 @@ button:hover{
 
 .pump-box span{
     background-color: antiquewhite;
-    pad: .5em;
+    padding: .5em;
 }
 
 .balloon{
@@ -156,7 +156,7 @@ button:hover{
 
 @media screen and (max-width: 700px){
     .container{
-        width: 90%;
+        width: 100%;
     }
 }
 
