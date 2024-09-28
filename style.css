@@ -15,8 +15,6 @@ body{
     background-color: var(--bg);
     font-family: "Permanent Marker", cursive;
     font-size: 16pt;
-    /* font-weight: 400; */
-    /* font-style: normal;  */
     color: var(--text-color);
 }
 
